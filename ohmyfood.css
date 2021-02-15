@@ -1,0 +1,191 @@
+body
+	{
+		width: 90%;
+		margin: 0px;
+		padding: 0px;
+	}
+@font-face
+	{
+		font-family: 'Shrikhand'
+		src: url(Projet3/Shrikhand-Regular.otf) format('opentype')
+	}
+.accueil
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+.accueil a
+	{
+		display: none;
+	}
+ul
+	{
+		list-style-type: none;
+		display: flex;
+	}
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 480px)
+{
+	@font-face
+	{
+		font-family: 'Shrikhand';
+		src: url(Projet3/Shrikhand-Regular.otf) format('opentype');
+	}
+	@font-face
+	{
+		font-family: 'Roboto';
+		src: url(Projet3/Roboto-Light.ttf) format('truetype');
+	}
+	body
+	{
+		width: auto;
+		margin: 0px;
+		padding: 0px;
+		
+	}
+	body h1, body h2, body h3
+	{
+		font-family: 'Shrikhand';
+	}
+	.reservation p
+	{
+		font-family: 'Roboto';
+	}
+	
+	header img
+	{
+		display: flex;
+		justify-content: center;
+		padding-left: 80px;
+	}
+	nav
+	{
+		display: none;
+	}
+	p.localisation 
+	{
+		display: flex;
+    	justify-content: center;
+		border: solid rgb(222,222,222);
+	    margin: 0;
+	    background-color: rgb(222,222,222);
+	    height: 30px;
+	    text-align: center;
+	    padding-top: 10px;
+	    box-shadow: magenta;
+	    box-shadow: 3px -1px 5px 0px rgb(26 24 24 / 75%);
+	    font-size: 20px;
+	    font-family: 'Roboto';
+	}
+	.localisation i
+	{
+		font-size: 18px;
+    	padding: 0px 15px 0 0px;
+	}
+	.reservation h1
+	{
+	    font-size: 28px;
+	    display: flex;
+	    padding: 25px 46px 0 55px;
+	}
+	.decouverte
+	{
+		font-size: 20px;
+		text-align: center;
+	}
+	.reservation button
+	{
+	    display: flex;
+	    height: 45px;
+	    border-radius: 25px;
+	    align-items: center;
+	    margin-left: 73px;
+	    padding: 0px 20px 0px 20px;
+	    background-color: #EEE;
+	    width: 195px;
+	    color: white;
+	    font-size: 13px;
+	    border: 1px solid rgb(222,222,222);
+	}
+	.reservation
+	{
+		background-color: rgb(222,222,222);
+    	padding: 0px 0 60px 0;
+	}
+	.fonctionnement h1, .restaurant h1
+	{
+		padding-left: 30px;
+	}
+	.menu
+	{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 10px;
+		margin-left: 20px;
+	}
+	.menu p
+	{
+		margin: 15px;
+	}
+	.menu button
+	{
+		border-radius: 15px;
+    	width: 240px;
+    	height: 55px;
+	}
+	.menu i
+	{
+		padding: 15px;
+	}
+	.restaurant
+	{
+		background-color: #EEE;
+		padding-bottom: 2px;
+	}
+	.restaurant img
+	{
+		width: 335px;
+    	height: 165px;
+	    border-radius: 15px 15px 0 0;
+	}
+	figure.images
+	{
+		border-radius: 15px 15px 15px 15px;
+    	background-color: white;
+    	margin: 20px;
+	}
+	figcaption h3
+	{
+		padding: 0px 0px 0px 15px;
+	}
+	figcaption i
+	{
+		padding-left: 90px;
+	}
+	figcaption p
+	{
+		padding: 0px 0px 0px 15px;
+	}
+	footer
+	{
+		background-color: black;
+		color: white;
+		padding: 10px 0px 0px 30px;
+	}
+	footer img
+	{
+		width: 120px;
+	}
+
+}
