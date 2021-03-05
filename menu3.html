@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
   <head>
-    <title>A la française</title>
+    <title>La palette du goût</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0">
     <link rel="stylesheet" href="ohmyfood.css">
@@ -9,93 +9,131 @@
     </script>
   </head>
   <body>
+    <div id="">
     <header class="accueil">
       <div id="logo">
         <p>
-          <i class="fas fa-arrow-left"></i>
+          <a href="ohmyfood.html">
+            <i class="fas fa-arrow-left"></i>
+          </a>
           <img src="images\logo\ohmyfood@2x.svg" alt="logos">
         </p>
       </div>
     </header>
 
-      <figure class="images">
-        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="plat1">
-        <div class="fig">
-          <figcaption>
-            <h1>
-              A la française
-              <i class="fas fa-heart"></i>
-            </h1>
-          </figcaption>
-        </div>
+      <figure class="images1">
+        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="plat3">
       </figure>
-      <div class="compo_menu">
+      <section class="compo_menu">
+        <h1>
+          La palette du goût
+          <i class="fas fa-heart" aria-hidden="true"></i>
+        </h1>
+        <div class="plats plats__entrees">
           <h2>
             ENTREES
           </h2>
-          <p>
-            Tartare de poulpe acidulé<br/>
-            Aux zests d'orange
-          </p>
-          <p>
-            Velouté de légumes d'antan<br/>
-            Carotte, panais, topinambour
-          </p>
-          <p>
-            Soupe à l'oignon<br/>
-            Revisitée
-          </p>
+          
+          <ul>
+            <li>
+              <div class="liste">
+                <h3>Fricassé d'escargot</h3>
+                Au piment d'espelette<div class="liste liste__icone"><strong>25€</strong><i class="fas fa-check-circle" aria-hidden="true"></i></div>
+              </div>
+            </li>
+          
+            <li>
+              <div class="liste">
+                <h3>Foie gras de canard mi-cuit</h3>
+                Et ses copeaux de truffe noire<div class="liste liste__icone"><strong>35€</strong><i class="fas fa-check-circle" aria-hidden="true"></i></div>
+              </div>
+            </li>
+            <li>
+              <div class="liste">
+                <h3>Oeuf au plat</h3>
+                Assaisonné à la truffe sur de<div class="liste liste__icone"><strong>20€</strong><i class="fas fa-check-circle" aria-hidden="true"></i></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="plats plats__princ">
           <h2>
             PLATS
           </h2>
-          <p>
-            Coquilles Saint-Jacques<br/>
-            Accompagné d'une purée de panais 40€
-          </p>
-          <p>
-            Magret de canard<br/>
-            Et parmentier de pommes de terre 35€
-          </p>
-          <p>
-            Pigeonneau d'Ille-et-Vilaine<br/>
-            Sur son lit de gnocchis aux légumes 44€
-          </p>
+          <ul>
+            <li>
+              <div class="liste">
+                <h3>Filet de boeuf aux herbes</h3>
+                Accompagné de sa ribmbelle de légumes<div class="liste liste__icone"><strong>40€</strong><i class="fas fa-check-circle" aria-hidden="true"></i></div>
+              </div>
+            </li>
+            <li>
+              <div class="liste">
+                <h3>Parmentier de queue de boeuf</h3>
+                A la truffe noire sur sa purée de panais<div class="liste liste__icone"><strong>35€</strong><i class="fas fa-check-circle" aria-hidden="true"></i></div>
+              </div>
+            </li>
+            <li>
+              <div class="liste">
+                <h3>Filet de Turbot</h3>
+                Aux agrumes<div class="liste liste__icone"><strong>44€</strong><i class="fas fa-check-circle" aria-hidden="true"></i></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="plats plats__dess">
           <h2>
             DESSERTS
           </h2>
-          <p>
-            Pétales de violettes glacés<br/>
-            Et purée de noisettes 18€
-          </p>
-          <p>
-            Fondant au chocolat<br/>
-            Revisité 22€
-          </p>
-          <p>
-            Millefeuille croustillant<br/>
-            Myrtille et pâte d'amande 23€
-          </p>
-        <button>
-          Commander
-        </button>
-      </div>
+          <ul>
+            <li>
+              <div class="liste">
+                <h3>Pétales de violettes glacés</h3>
+                Et purée de noisettes <div class="liste liste__icone"><strong>18€</strong><i class="fas fa-check-circle" aria-hidden="true"></i></div>
+              </div>
+            </li>
+            <li>
+              <div class="liste">
+                <h3>Fondant au chocolat</h3>
+                Revisité <div class="liste liste__icone"><strong>22€</strong><i class="fas fa-check-circle" aria-hidden="true"></i></div>
+              </div>
+            </li>
+            <li>
+              <div class="liste">
+                <h3>Millefeuille croustillant</h3>
+                Myrtille et pâte d'amande <div class="liste liste__icone"><strong>23€</strong><i class="fas fa-check-circle" aria-hidden="true"></i></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="commande">
+          <button class="principal">
+            Commander
+          </button>
+        </div>
+        </div>
+    </section>
 
     <footer>
-      <p>
-        <img src="images\logo\ohmyfood@2x.svg" alt="logo">
-      </p>
-      <p>
-        Proposer un restaurant
-      </p>
-      <p>
-        Devenir partenaire
-      </p>
-      <p>
-        Mentions légales
-      </p>
-      <p>
-        Contact
-      </p>
+      <h1>
+        ohmyfood
+      </h1>
+      <ul>
+        <li>
+          <i class="fas fa-utensils"></i>
+          Proposer un restaurant
+        </li>
+        <li>
+          <i class="fas fa-hands-helping"></i>
+          Devenir partenaire
+        </li>
+        <li>
+          Mentions légales
+        </li>
+        <li>
+          Contact
+        </li>
+      </ul>
     </footer>
 
   </body>
