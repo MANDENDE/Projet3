@@ -268,11 +268,28 @@
 	    position: relative;
 	    overflow: hidden;
 	    text-overflow: ellipsis;
+	    cursor: pointer;
 	}
 	.liste i
 	{
 		right: -1rem;
 		top: 3.5rem;
+	}
+	.plats li i
+	{
+		transform: translateX(-30%);
+	}
+	.plats li i:active
+	{
+		transition: transform 1s; 	
+	}
+	.liste.liste__icone i.fas.fa-check-circle
+	{
+		color: white;
+		background-color: #99E2D0;
+	    width: 60px;
+    	height: 56px;
+    	font-weight: 900;
 	}
 	.plats h3
 	{
@@ -288,6 +305,7 @@
 	    padding-bottom: 7px;
 	    width: 3.3rem;
 	}
+
 	.commande
 	{
 		display: flex;
@@ -360,6 +378,58 @@
 	    top: -115px;
 	    border-radius: 40px 40px 0 0;
 	}
-	
+	@keyframes mon_entree
+	{
+		0%{
+			transform: translateX(-200px);
+			opacity: 0;
+		}
+		100%{
+
+			transform: translateX(0px);
+			opacity: 1; 
+		}
+	}
+	.plats__entrees
+	{
+		animation: mon_entree 3s 0.5s ease-in-out;
+		animation-iteration-count: 1;
+	}
+	@keyframes plats_princ
+	{
+		0%{
+			transform: translateX(-200px);
+			opacity: 0;
+		}
+		100%{
+
+			transform: translateX(0px);
+			opacity: 1; 
+		}
+	}
+	.plats__princ
+	{
+		animation: plats_princ 3s 0.7s ease-in-out;
+		animation-iteration-count: 1;
+	}
+	@keyframes plats_dess
+	{
+		0%{
+			transform: translateX(-200px);
+			opacity: 0;
+		}
+		100%{
+
+			transform: translateX(0px);
+			opacity: 1; 
+		}
+	}
+	.plats__dess
+	{
+		animation: plats_dess 3s 0.9s ease-in-out;
+		animation-iteration-count: 1;
+	}
+
+
 
 
