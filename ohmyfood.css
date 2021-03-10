@@ -92,10 +92,6 @@
 		background-color: #EEE;
 		padding-bottom: 55px;
 	}
-	.rest
-	{
-		
-	}
 	.reservation button
 	{
 	    border-radius: 25px;
@@ -392,7 +388,7 @@
 	}
 	.plats__entrees
 	{
-		animation: mon_entree 3s 0.5s ease-in-out;
+		animation: mon_entree 2s ease-in-out;
 		animation-iteration-count: 1;
 	}
 	@keyframes plats_princ
@@ -409,7 +405,7 @@
 	}
 	.plats__princ
 	{
-		animation: plats_princ 3s 0.7s ease-in-out;
+		animation: plats_princ 2s 2.15s  both;
 		animation-iteration-count: 1;
 	}
 	@keyframes plats_dess
@@ -426,7 +422,7 @@
 	}
 	.plats__dess
 	{
-		animation: plats_dess 3s 0.9s ease-in-out;
+		animation: plats_dess 2s 3.15s both;
 		animation-iteration-count: 1;
 	}
 
