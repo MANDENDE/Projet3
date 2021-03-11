@@ -325,12 +325,15 @@
 	.liste__icone
 	{
 		position: absolute;
-		right: -75px;
-		top: 0;
+		right: 0px;
+		top: 10px;
 		color: white;
 		background-color: #99E2D0;
 		width: 60px;
-		height: 56px;
+		height: 70px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		font-weight: 900;
 		transform: translateX(100%);
 		transition: transform 1s ease-in-out;
