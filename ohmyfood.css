@@ -215,7 +215,7 @@
 		border-bottom: 10px solid blue;
 		border-top: 10px solid pink;
 		position: absolute;
-		animation: loader 2s linear infinite both;
+		animation: loader 2s linear infinite;
 		top: 0;
 		bottom: 0;
 		right: 0;
@@ -322,27 +322,24 @@
 	    text-overflow: ellipsis;
 	    cursor: pointer;
 	}
-	.liste i
+	.liste__icone
 	{
-		right: -1rem;
-		top: 3.5rem;
-	}
-	.plats li i
-	{
-		transform: translateX(-30%);
-	}
-	.plats li i:active
-	{
-		transition: transform 1s; 	
-	}
-	.liste.liste__icone i.fas.fa-check-circle
-	{
+		position: absolute;
+		right: -75px;
+		top: 0;
 		color: white;
 		background-color: #99E2D0;
-	    width: 60px;
-    	height: 56px;
-    	font-weight: 900;
+		width: 60px;
+		height: 56px;
+		font-weight: 900;
+		transform: translateX(100%);
+		transition: transform 1s ease-in-out;
 	}
+	.liste:hover+.liste__icone
+	{
+		transform: translateX(0%);
+	}
+	
 	.plats h3
 	{
 		line-height: 0;
