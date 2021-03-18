@@ -282,15 +282,22 @@
 		right: 2rem;
 	    font-size: 23px;
 	    font-weight: normal;
+		opacity: 1;
+
 
 	}
-	.compo_menu i:hover, .compo_menu i:hover
+	.compo_menu i:hover, .compo_menu2 i:hover
 	{
 	    font-weight: -webkit-linear-gradient(top, #FF79DA, #9356DC);
 		font-weight: -moz-linear-gradient(bottom, #FF79DA, #9356DC);
 		font-weight: -o-linear-gradient(bottom, #FF79DA, #9356DC);
 		font-weight:  linear-gradient(to bottom, #FF79DA, #9356DC);
 		border:none;
+	}
+	.like.compo_menu2 i
+	{
+		font-weight: bold;
+		color: #FF79DA;
 	}
 	ul
 	{
@@ -319,28 +326,55 @@
 	    margin-bottom: 10px;
 	    position: relative;
 	    overflow: hidden;
-	    text-overflow: ellipsis;
 	    cursor: pointer;
 	}
 	.liste__icone
 	{
 		position: absolute;
 		right: 0px;
-		top: 10px;
+		top: 0px;
 		color: white;
 		background-color: #99E2D0;
-		width: 60px;
-		height: 70px;
+		width: 81px;
+		height: 81px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		font-weight: 900;
 		transform: translateX(100%);
-		transition: transform 1s ease-in-out;
+		transition: transform 0.5s ease-in-out;
+		
 	}
 	.liste:hover+.liste__icone
 	{
+		
 		transform: translateX(0%);
+	}
+
+	.liste__icone i
+	{
+		transform: rotate(-360deg);
+		transition: transform 0.5s ease-in-out;
+	}
+	.liste:hover+.liste__icone i
+	{
+		transform: rotate(0deg);
+	}
+	.liste strong
+	{
+		transform: translateX(0%);
+		transition: transform 0.5s ease-in-out;
+	}
+	.liste:hover strong
+	{
+		transform: translateX(-300%);
+	}
+	
+	.liste p
+	{
+		text-overflow: ellipsis;
+		width: 80%;
+		white-space: nowrap;
 	}
 	
 	.plats h3
@@ -480,6 +514,27 @@
 	{
 		animation: plats_dess 2s 3.15s both;
 		animation-iteration-count: 1;
+	}
+
+	@media screen and (min-width: 480px) and (max-width: 768px)
+	{
+		nav 
+		{
+			display: flex;
+			
+		}
+		ul
+		{
+			display: flex;
+		}
+		#logo
+		{
+			display: flex;
+		}
+		.restaurant
+		{
+			display: flex;
+		}
 	}
 
 
