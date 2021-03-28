@@ -646,6 +646,43 @@
 			height: auto;
     		margin-top: 0
 		}
+		#logo img
+		{
+			width: 35%;
+    		padding-left: 20%;
+		}
+		#logo i 
+		{
+			font-size: 2.5rem;
+			margin-left: 2rem;
+			color: black;
+		}
+		.compo_menu h1, .compo_menu2 h1 
+		{
+			font-size: 30px;
+		}
+		.compo_menu i, .compo_menu2 i 
+		{
+			font-size: 35px;
+		}
+		.plats h2 
+		{
+			font-size: 25px;
+			border-bottom: 6px #99E2D0 solid;
+			width: 3.5rem;
+		}
+		.plats ul 
+		{
+			display: flex;
+			justify-content: space-around;
+		}
+		.plats li 
+		{
+			width: 80%;
+			height: 6rem;
+			margin-bottom: 20px;
+			margin-left: 50px;
+		}
 	}
 	@media screen and (min-width:769px)
 	{
