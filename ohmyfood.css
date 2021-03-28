@@ -107,6 +107,17 @@
 		padding-top: 10px;
 		font-size: 1.3rem;
 	}
+	.chiffre
+	{
+		width: 7%;
+		padding: 1%;
+		border-radius: 50%;
+		background-color: #9356DC;
+		margin-left: -24px;
+		display: flex;
+		justify-content: center;
+		margin-top: 0.8rem;
+	}
 	.menu
 	{
 		padding: 10px;
@@ -125,9 +136,14 @@
 		display: flex;
 		justify-content: space-around;
 	}
+	.groupe_menu .menu:hover
+	{
+		color: #ee97fd;
+	}
 	.menu i
 	{
 		padding: 15px 15px 15px 0;
+		color: grey;
 	}
 	.restaurant
 	{
@@ -168,7 +184,6 @@
 	}
 	figure.images i
 	{
-		font-weight: normal;
 		position: absolute;
 		right: 1.5rem;
 	}
@@ -216,7 +231,7 @@
 		border-bottom: 10px solid blue;
 		border-top: 10px solid pink;
 		position: absolute;
-		animation: loader 2s linear;
+		animation: loader 2s linear both;
 		top: 0;
 		bottom: 0;
 		right: 0;
@@ -294,7 +309,6 @@
 		position: absolute;
 		right: 2rem;
 	    font-size: 23px;
-	    font-weight: normal;
 		opacity: 1;
 
 
@@ -382,9 +396,14 @@
 	{
 		transform: translateX(-300%);
 	}
+	.liste:hover p
+	{
+		width: 60%;
+	}
 	
 	.liste p
 	{
+		overflow: hidden;
 		text-overflow: ellipsis;
 		width: 80%;
 		white-space: nowrap;
@@ -620,6 +639,13 @@
 		{
 			height: 150px;
 		}
+
+
+		figure.images1 img 
+		{
+			height: auto;
+    		margin-top: 0
+		}
 	}
 	@media screen and (min-width:769px)
 	{
@@ -661,6 +687,18 @@
 		{
 			font-size: 1.7rem;
 		}
+		.chiffre
+		{
+			width: 15%;
+			padding: 1%;
+			border-radius: 50%;
+			background-color: #9356DC;
+			margin-left: -13px;
+			display: flex;
+			justify-content: center;
+			margin-top: 1.4rem;
+	}
+		}
 		.groupe_menu
 		{
 			width: auto;
@@ -671,6 +709,10 @@
 		.menu
 		{
 			width: 80%;
+		}
+		.menu button
+		{
+			width: auto;
 		}
 		.menu i 
 		{
@@ -727,6 +769,18 @@
 		footer
 		{
 			height: 130px;
+		}
+		.plein
+		{
+			font-weight: 900;
+			color: pink;
+			transform: scale(0);
+			transform-origin: bottom;
+			transition: transform 0.5s;
+		}
+		.vide:hover + .plein
+		{
+			transform: scale(1);
 		}
 	}
 
