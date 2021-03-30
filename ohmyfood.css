@@ -702,12 +702,12 @@
 		}
 		.compo_menu h1, .compo_menu2 h1 
 		{
-			font-size: 30px;
+			font-size: 35px;
 			margin-left: 50px;
 		}
 		.compo_menu i, .compo_menu2 i 
 		{
-			font-size: 35px;
+			font-size: 25px;
 		}
 		.plats h2 
 		{
@@ -881,6 +881,54 @@
 		.vide:hover + .plein
 		{
 			transform: scale(1);
+		}
+
+		#logo
+		{
+			text-align: center;
+		}
+		#logo i 
+		{
+			font-size: 25px;
+		}
+		#logo img 
+		{
+			width: 30%;
+		}
+		figure.images1 img
+		{
+			height: 500px;
+		}
+		.groupe_plats.plats
+		{
+			width: 33%;
+
+		}
+		.plats ul 
+		{
+			width: 100%;
+			display: flex;
+		}
+		.plats li 
+		{
+			width: 45%;
+			padding:14px 4px 10px 10px;
+			margin-right: 10px;
+		}
+		.liste__icone
+		{
+			width: 90px;
+			height: 98px;
+		}
+		.liste strong
+		{
+			top: 3.3rem;
+		}
+		.compo_menu button, .compo_menu2 button
+		{
+			width: 35%;
+			padding: 1.5rem;
+			font-size: 1.3rem;
 		}
 	}
 
