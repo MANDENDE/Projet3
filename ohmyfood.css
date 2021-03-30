@@ -592,9 +592,13 @@
 		{
 			font-size: 1.7rem;
 		}
-		.localisation i, .contenu p
+		.localisation i
 		{
 			font-size: 1.5rem;
+		}
+		.contenu p 
+		{
+			font-size: 1.3rem;
 		}
 		.reservation h1
 		{
@@ -608,8 +612,8 @@
 		}
 		.menu button
 		{
-			font-size: 1.2rem;
-			width: 94%;
+			font-size: 1rem;
+			width: 86%;
 			border-radius: 2rem;
 		}
 		.groupe_menu
