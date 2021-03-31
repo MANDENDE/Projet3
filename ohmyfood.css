@@ -4,6 +4,7 @@
 		margin: 0px;
 		padding: 0px;
 		background-color: #EEE;
+		font-family: 'roboto';
 	}
 	@font-face
 	{
@@ -14,11 +15,6 @@
 	{
 		font-family: 'roboto';
 		src: url(roboto-2014/Roboto-Regular.ttf) format('TrueType');
-	}
-
-	body
-	{
-		font-family: 'roboto';
 	}
 	.reservation p
 	{
@@ -231,6 +227,11 @@
 	{
 		line-height: 2;
 	}
+	.pied a
+		{
+			color: white;
+			text-decoration: none;
+		}
 	.chargement
 	{
 		position: fixed;
@@ -285,6 +286,7 @@
 	}
 	.main
 		{
+			width: 100%;
 			animation: main 0s 2.15s linear both;  
 		}
 	@keyframes main
@@ -707,7 +709,11 @@
 		.compo_menu h1, .compo_menu2 h1 
 		{
 			font-size: 35px;
-			margin-left: 50px;
+			text-align: center;
+		}
+		.groupe_plats
+		{
+			margin-left: 7rem;
 		}
 		.compo_menu i, .compo_menu2 i 
 		{
@@ -730,7 +736,7 @@
 		}
 		.plats li 
 		{
-			width: 60%;
+			width: 75%;
 			height: 6rem;
 			margin-bottom: 20px;
 			margin-left: 3px;
