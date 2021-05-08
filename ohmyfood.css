@@ -86,11 +86,15 @@
 		background-color: #EEE;
 		padding-bottom: 55px;
 	}
+	.rest
+	{
+		display: flex;
+		justify-content: center;
+	}
 	.reservation button
 	{
 	    border-radius: 25px;
 	    color: white;
-	    margin-left: 73px;
 	    padding: 13px 20px 13px 20px;
 	    background: -webkit-linear-gradient(top, #FF79DA, #9356DC);
 		background: -moz-linear-gradient(bottom, #FF79DA, #9356DC);
@@ -208,6 +212,7 @@
 	{
 		position: absolute;
 		right: 1.5rem;
+		font-weight: 100;
 	}
 	footer.pied
 	{
@@ -453,6 +458,7 @@
 		right: 2rem;
 	    font-size: 23px;
 		opacity: 1;
+		
 
 
 	}
@@ -889,20 +895,16 @@
 			justify-content: space-around;
 			
 		}
-		.menu {
-			padding: 0px;
-			margin-left: 10px;
-		}
+
 		.menu i
 		{
-			padding: 17px 7px 0px 35px;
 			font-size: 1.6rem;
 		}
 		.chiffre
 		{
-			width: 14%;
-			padding: 3%;
-			margin-left: -20px;
+			width: 20px;
+			padding: 4px;
+			left: auto;
 		}
 		.rest
 		{
@@ -982,6 +984,7 @@
 		.compo_menu i, .compo_menu2 i 
 		{
 			font-size: 25px;
+			font-weight: 100;
 		}
 		.plats h2 
 		{
@@ -1059,14 +1062,14 @@
 		}
 		.chiffre
 		{
-			width: 8px;
+			width: 16px;
 			padding: 8px;
 			border-radius: 50%;
 			background-color: #9356DC;
-			margin-left: -20px;
 			display: flex;
 			justify-content: center;
 			margin-top: 1.4rem;
+			left: auto;
 		}
 		
 		.groupe_menu
@@ -1094,7 +1097,7 @@
 		}
 		.menu i 
 		{
-			padding: 17px 20px 14px 16px;
+			padding: 13px;
 		}
 		.menu p
 		{
@@ -1117,11 +1120,11 @@
 		}
 		figcaption p 
 		{
-			margin-right: 5rem;
+			margin-right: 3rem;
 		}
 		figcaption a
 		{
-			font-size: 1rem;
+			font-size: 0.9rem;
 
 		}
 		figure.images i
@@ -1129,6 +1132,7 @@
 			right: 1rem;
 			font-size: 1rem;
 			bottom: 3.2rem;
+			font-weight: bold;
 		}
 		footer h1
 		{
@@ -1151,7 +1155,7 @@
 		.plein
 		{
 			font-weight: 900;
-			color: pink;
+			color: rgb(255 108 251);
 			transform: scale(0);
 			transform-origin: bottom;
 			transition: transform 0.5s;
