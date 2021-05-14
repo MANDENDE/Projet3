@@ -458,17 +458,18 @@
 		right: 2rem;
 	    font-size: 23px;
 		opacity: 1;
-		
 
-
+	}
+	i.plein.fas.fa-heart 
+	{
+		font-weight: 100;
 	}
 	.compo_menu i:hover, .compo_menu2 i:hover
 	{
 		border:none;
 	}
-	.like.compo_menu2 i
+	 .like.compo_menu i, .like.compo_menu2 i
 	{
-		font-weight: bold;
 		color: #FF79DA;
 	}
 	ul
@@ -958,7 +959,7 @@
 
 		figure.images1 img 
 		{
-			height: auto;
+			height: 520px;
     		margin-top: 0
 		}
 		#logo img
@@ -1152,9 +1153,13 @@
 		{
 			height: 130px;
 		}
+		i.plein.fas.fa-heart 
+		{
+			font-weight: bold;
+		}
 		.plein
 		{
-			font-weight: 900;
+	
 			color: rgb(255 108 251);
 			transform: scale(0);
 			transform-origin: bottom;
@@ -1211,6 +1216,7 @@
 		{
 			top: 3.3rem;
 		}
+
 		.compo_menu button, .compo_menu2 button
 		{
 			width: 35%;
