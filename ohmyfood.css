@@ -260,8 +260,9 @@
 		margin: auto;
 		border: 10px solid gray;
 		border-radius: 50%;
-		border-bottom: 10px solid blue;
-		border-top: 10px solid pink;
+		border-bottom: 10px solid rgb(147,86,220);
+		border-top: 10px solid rgb(191, 95, 217);
+		border-left: rgba(255,108,212,1);
 		position: absolute;
 		-webkit-animation: loader 2s linear both ;
 		-moz-animation: loader 2s linear both;
@@ -458,6 +459,7 @@
 		right: 2rem;
 	    font-size: 23px;
 		opacity: 1;
+		cursor: pointer;
 
 	}
 	i.plein.fas.fa-heart 
@@ -470,7 +472,10 @@
 	}
 	 .like.compo_menu i, .like.compo_menu2 i
 	{
-		color: #FF79DA;
+		
+		background-clip:text;
+		-webkit-background-clip: text;
+		color:rgb(191, 95, 217);
 	}
 	ul
 	{
@@ -524,50 +529,12 @@
 		transition: transform 0.5s ease-in-out;
 		
 	}
-	.liste:hover+.liste__icone
-	{
-		-webkit-transform: translateX(0%);
-		-moz-transform: translateX(0%);
-		-o-transform: translateX(0%);
-		transform: translateX(0%);
-	}
 
-	.liste__icone i
-	{
-		-webkit-transform: rotate(-360deg);
-		-moz-transform: rotate(-360deg);
-		-o-transform: rotate(-360deg);
-		transform: rotate(-360deg);
-		-webkit-transition: transform 0.5s ease-in-out;
-		-moz-transition: transform 0.5s ease-in-out;
-		-o-transition: transform 0.5s ease-in-out;
-		transition: transform 0.5s ease-in-out;
-	}
-	.liste:hover+.liste__icone i
-	{
-		-webkit-transform: rotate(0deg);
-		-moz-transform: rotate(0deg);
-		-o-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-	.liste strong
-	{
-		-webkit-transform: translateX(0%);
-		-moz-transform: translateX(0%);
-		-o-transform: translateX(0%);
-		transform: translateX(0%);
-		-webkit-transition: transform 0.5s ease-in-out;
-		-moz-transition: transform 0.5s ease-in-out;
-		-o-transition: transform 0.5s ease-in-out;
-		transition: transform 0.5s ease-in-out;
-	}
-	.liste:hover strong
-	{
-		-webkit-transform: translateX(-100px);
-		-moz-transform: translateX(-100px);
-		-o-transform: translateX(-100px);
-		transform: translateX(-100px);
-	}
+
+
+	
+
+	
 	.liste:hover p
 	{
 		width: 40%;
@@ -846,8 +813,9 @@
 		animation-iteration-count: 1;
 	}
 
-	@media screen and (min-width: 480px) and (max-width: 768px)
+	@media screen and (min-width: 480px) and (max-width: 978px)
 	{
+		
 		#logo h1
 		{
 			font-size: 3.5rem;
@@ -1009,6 +977,7 @@
 			margin-bottom: 20px;
 			margin-left: 3px;
 		}
+	
 		.compo_menu button, .compo_menu2 button 
 		{
 			width: 40%;
@@ -1017,12 +986,14 @@
 		}
 
 	}
-	@media screen and (min-width:481px ) and (max-with:744px)
-    {
-		
-	}
-	@media screen and (min-width:769px)
+	
+	@media screen and (min-width:979px)
 	{
+		body
+		{
+			max-width: 1200px;
+			margin: auto;
+		}
 		#logo h1
 		{
 			font-size: 2.5rem;
@@ -1052,6 +1023,7 @@
 		.reservation button
 		{
 			font-size: 1.3rem;
+			cursor: pointer;
 		}
 		.fonctionnement, .restaurant
 		{
@@ -1087,6 +1059,7 @@
 		.menu button
 		{
 			width: auto;
+			cursor: pointer;
 		}
 		.menu button:hover 
 		{
@@ -1094,6 +1067,7 @@
 		}
 		.menu button:hover i 
 		{
+			
 			color: #9356DC;
 		}
 		.menu i 
@@ -1112,28 +1086,62 @@
 		}
 		figure.images
 		{
-			width: 221px;
+			width: 215px;
 			margin-bottom: 20px;
 		}
-		figcaption h3
+		figcaption
 		{
-			margin-right: 2rem;
+			padding: 0;
 		}
-		figcaption p 
+		.m1 p
+		{
+			margin-right: 6rem;
+		}
+		.m1 h3
+		{
+			margin-right: 4rem;
+		}
+		.m2 p
+		{
+			margin-right: 8rem;
+		}
+		.m2 h3
+		{
+			margin-right: 4rem;
+		}
+		.m3 p
+		{
+			margin-right: 7.5rem;
+		}
+		.m3 h3
+		{
+			margin-right: 6rem;
+		}
+		.m4 p
+		{
+			margin-right: 5rem;
+		}
+		.m4 h3
 		{
 			margin-right: 3rem;
 		}
+		
+		figcaption p 
+		{
+			font-size: 10px;
+		}
 		figcaption a
 		{
-			font-size: 0.9rem;
+			font-size: 1rem;
 
 		}
 		figure.images i
 		{
-			right: 1rem;
-			font-size: 1rem;
-			bottom: 3.2rem;
+			right: 0.8rem;
+			font-size: 1.2rem;
+			bottom: 2.7rem;
 			font-weight: bold;
+			cursor: pointer;
 		}
 		footer h1
 		{
@@ -1156,11 +1164,12 @@
 		i.plein.fas.fa-heart 
 		{
 			font-weight: bold;
+			cursor: pointer;
 		}
 		.plein
 		{
 	
-			color: rgb(255 108 251);
+			color: rgb(191 95 217);
 			transform: scale(0);
 			transform-origin: bottom;
 			transition: transform 0.5s;
@@ -1186,6 +1195,13 @@
 		{
 			height: 500px;
 		}
+		figure.images img 
+		{
+			width: 215px;
+			height: 145px;
+			margin-top: 0px;
+			object-fit: cover;
+		}
 		.nouveau
 		{
 			width: 32%;
@@ -1201,16 +1217,67 @@
 			display: flex;
 			flex-wrap: wrap;
 		}
+		.liste
+		{
+			padding: 7px;
+		}
+		.liste:hover+.liste__icone
+		{
+			-webkit-transform: translateX(0%);
+			-moz-transform: translateX(0%);
+			-o-transform: translateX(0%);
+			transform: translateX(0%);
+		}
+		.liste__icone i
+		{
+			-webkit-transform: rotate(-360deg);
+			-moz-transform: rotate(-360deg);
+			-o-transform: rotate(-360deg);
+			transform: rotate(-360deg);
+			-webkit-transition: transform 0.5s ease-in-out;
+			-moz-transition: transform 0.5s ease-in-out;
+			-o-transition: transform 0.5s ease-in-out;
+			transition: transform 0.5s ease-in-out;
+		}
+		.liste:hover+.liste__icone i
+		{
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+		.liste strong
+		{
+			-webkit-transform: translateX(0%);
+			-moz-transform: translateX(0%);
+			-o-transform: translateX(0%);
+			transform: translateX(0%);
+			-webkit-transition: transform 0.5s ease-in-out;
+			-moz-transition: transform 0.5s ease-in-out;
+			-o-transition: transform 0.5s ease-in-out;
+			transition: transform 0.5s ease-in-out;
+		}
+		.liste:hover strong
+		{
+			-webkit-transform: translateX(-100px);
+			-moz-transform: translateX(-100px);
+			-o-transform: translateX(-100px);
+			transform: translateX(-100px);
+		}
 		.plats li 
 		{
 			width: 45%;
-			padding:14px 4px 10px 10px;
-			margin-right: 10px;
+			padding:4px;
+			margin-right: 35px;
+		}
+		.li 
+		{
+			height: fit-content;
 		}
 		.liste__icone
 		{
-			width: 90px;
-			height: 98px;
+			width: 75px;
+			height: 82px;
 		}
 		.liste strong
 		{
@@ -1222,6 +1289,7 @@
 			width: 35%;
 			padding: 1.5rem;
 			font-size: 1.3rem;
+			cursor: pointer;
 		}
 	}
 
