@@ -813,7 +813,7 @@
 		animation-iteration-count: 1;
 	}
 
-	@media screen and (min-width: 480px) and (max-width: 978px)
+	@media screen and (min-width: 645px) and (max-width: 978px)
 	{
 		
 		#logo h1
@@ -893,11 +893,11 @@
 		}
 		figcaption h3
 		{
-			font-size: 1.5rem;
+			font-size: 1.3rem;
 		}
 		figcaption P
 		{
-			font-size: 1.3rem;
+			font-size: 1rem;
 		}
 		.fonctionnement h1, .restaurant h1
 		{
@@ -913,11 +913,12 @@
 		}
 		.pied li 
 		{
-			padding-right: 3.2rem;
+			padding-right: 3rem;
+			font-size: 1.2rem;
 		}
 		footer h1
 		{
-			font-size: 2.5rem;
+			font-size: 2rem;
 		}
 		footer
 		{
@@ -948,7 +949,7 @@
 		}
 		.groupe_plats
 		{
-			margin-left: 7rem;
+			margin: auto;
 		}
 		.compo_menu i, .compo_menu2 i 
 		{
@@ -970,13 +971,7 @@
 		{
 			font-size: 1.3rem;
 		}
-		.plats li 
-		{
-			width: 75%;
-			height: 6rem;
-			margin-bottom: 20px;
-			margin-left: 3px;
-		}
+		
 	
 		.compo_menu button, .compo_menu2 button 
 		{
